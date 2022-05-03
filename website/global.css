@@ -1,0 +1,174 @@
+.fixed {
+    position: fixed;
+    width: 100%;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+nav {
+    width: 100%;
+    background: #383838;
+    overflow: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 0 0 150px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+li {
+    float: left;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.logo img {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 10px;
+    height: 100%;
+    width: 10%;
+}
+
+.quarter img {
+    height: 35%;
+}
+
+nav a {
+    width: 190px;
+    display: block;
+    padding: 25px 5px;
+    text-decoration: none;
+    font-family: Arial;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+nav a:hover {
+    background: grey;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+b {
+    color: black;
+}
+
+body {
+    font-family: "Georgia, serif";
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Arial;
+    line-height: 50px
+}
+
+h2 {
+    color: #0A64A4;
+    font-size: 45px;
+    line-height: 0.5;
+    font-family: Arial;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: Arial;
+}
+
+p {
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: Arial;
+}
+
+.title {
+    width: 100%;
+    height: 220px;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.container {
+    width: 100%;
+    background-image: url("mjvslebron.jpg");
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.row {
+    overflow: hidden;
+    display: flex;
+}
+
+.half1 {
+    background: rgba(255, 255, 255, 0.83);
+    flex: 42.5%;
+    float: left;
+    border: 5px outset;
+    padding: 10px;
+    margin: 30px;
+}
+
+.half2 {
+    background: rgba(255, 255, 255, 0.83);
+    flex: 42.5%;
+    float: right;
+    border: 5px outset;
+    padding: 10px;
+    margin: 30px;
+}
+
+.sixty {
+    background: rgba(200, 200, 200, 0.7);
+    float: left;
+    border: 5px groove;
+    padding: 5px;
+    margin: 10px;
+    flex: 50%;
+}
+
+.fourty {
+    background: rgba(50, 50, 50, 0.7);
+    float: right;
+    border: 5px groove;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 10px;
+    flex: 40%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.container {
+    width: 100%;
+    background-image: url("image/bg_1.jpg");
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+#intro {
+    line-height: 1.94;
+}

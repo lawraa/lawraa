@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="global.css">
+
+<head>
+    <link rel="icon" type="image/png" href="image/logo.png" />
+    <div class="fixed">
+        <div class="logo">
+            <a href="index.html"><img src="image/logo.png" style="object-fit: scale-down"></a>
+            <meta charset="utf-8">
+            <title>Lawrance Chen Biography (陳守仁)</title>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://goo.gl/maps/vWMDezxTUMki8zui8">NTU MAP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</head>
+
+<body onload="current_time()">
+    <audio autoplay loop>
+        <source src="sound/bgm.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="container">
+        <div class="title">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 align="center">Lawrance Chen (陳守仁)</h1>
+            <br>
+        </div>
+        <div class="row">
+            <div class="sixty">
+                <div id="intro">
+                    <h2 align="left"><b>Lawrance 陳守仁</b></h2>
+                    <p>Lawrance Chen (陳守仁) received a high school diploma from <a href="https://www.tcis.ac.th/">Thai-Chinese International School</a>, Thailand. I am currently studying my second year of <a href="https://web.ee.ntu.edu.tw/">Electrical Engineering</a>                        in <a href="https://www.ntu.edu.tw/index.html">NTU</a>. </p>
+                    <p>I ended my high school academics with a 4.02 out of 4 GPA. In my junior year, I received a partial scholarship from TCIS, which was only given to three students from each grade level. I was recognized by the National Honor Society
+                        (NHS) of TCIS and was invited to join. The four pillars of NHS are leadership, service, scholarship, and character; I was involved in every single category. I have served in elected leadership for the class of 2020’s executive
+                        committee for four straight years, organizing class events, fundraising over 500,000 baht for the class of 2019’s prom, and organizing multiple food sales. I also have been ONE club (an environmental club) member for three years,
+                        and the vice president this year. Furthermore, I joined the student council in the last three years of high school, being the leader of the Information Technology department for two years, and holding all the big events in the
+                        entire school. I also participated in many community service events, collecting an astounding amount of over 100 hours of community service. </p>
+                </div>
+            </div>
+            <div class="fourty">
+                <img class="center" src="image/myphoto.jpeg" alt="Portrait">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="half1">
+                <h2 align="center">My Hobbies</h2>
+                <div id="hobby1">
+                    <h3 align="left">1. Play Basketball(<a href="https://www.basketball-reference.com/players/j/jamesle01.html">Favorite Player</a>)</h3>
+                    <p>I've played basketball since I was in elementary school, and I joined the NTUEE basketball team as well! My favorite player in Lebron James.
+                    </p>
+                    <img class="center" src="image/lebron.jpg" alt="Lebron James">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="hobby2">
+                    <h3 align="left">2. Board Games(<a href="https://www.daysofwonder.com/tickettoride/en/usa/">Recommend to play</a>)</h3>
+                    <p>I love to play board games like Werewolves, Avalon, Monopoly, Ticket to Ride, etc... When I have time, I will call out my friends to play together!
+                    </p>
+                    <img class="center" src="image/boardgames.jpg" alt="Board Games">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="hobby3">
+                    <h3 align="left">3. Travel(<a href="https://blog.kkday.com/56055/asia-taiwan-hualien-taroko-guide">Taroko! I went there this winter break.</a>)</h3>
+                    <p>I love to travel around to eat and enjoy beautiful views. When I have time, I wouldn't stay at home, but go outdoors with friends and families.
+                    </p>
+                    <img class="center" src="image/travel.jpg" alt="Travel">
+                </div>
+
+            </div>
+            <div class="half2">
+
+                <h2 align="center">CLOCK</h2>
+                <div id="timedate">
+                    <h3 align="left">TIME and DATE</h3>
+                    <p>Time and date we open the website <span id='month_date_year'></span><span> </span><span id='time'></span>.</p>
+                </div>
+
+                <div>
+                    <p style="font-size: 40px;">Running Clock
+                        <p id="clock" style="font-size: 40px;"></p>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        date_data = new Date()
+            // Get Day
+        current_month = date_data.getMonth()
+        current_date = date_data.getDate()
+        current_year = date_data.getFullYear()
+        document.getElementById('month_date_year').innerText = (current_month + 1) + '-' + current_date + '-' + current_year
+
+        current_hour = date_data.getHours()
+        current_minute = date_data.getMinutes()
+        current_second = date_data.getSeconds()
+        current_hour = checkTime(current_hour)
+        current_minute = checkTime(current_minute)
+        current_second = checkTime(current_second)
+        document.getElementById('time').innerText = current_hour + ':' + current_minute + ':' + current_second
+
+        function current_time() {
+            clock = new Date()
+            hh = clock.getHours()
+            mm = clock.getMinutes()
+            ss = clock.getSeconds()
+            hh = checkTime(hh)
+            mm = checkTime(mm)
+            ss = checkTime(ss)
+            document.getElementById('clock').innerText = hh + ':' + mm + ':' + ss;
+            setTimeout(current_time, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            };
+            return i;
+        }
+    </script>
+</body>
+
+</html>

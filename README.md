@@ -1,4 +1,14 @@
-### Hi there 👋
+# Lawrance Shou-Jen Chen's GitHub 🧑🏼‍💻
+* 🌱 I'm currently learning Machine Learning and Wireless Mobile Network 
+* 🔭 My current undergraduate research lab: [WMNLab](http://wmnlab.ee.ntu.edu.tw/)
+* 📫 How to reach me: chenlawrance@gmail.com
+
+### Language and Tools
+
+
+
+
+
 
 <!--
 **lawraa/lawraa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

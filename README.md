@@ -1,5 +1,5 @@
 # Lawrance Shou-Jen Chen's GitHub 🧑🏼‍💻
-* 🌱 Just published a paper as the first author to COLM 2024! Check it out! --> (LLM Discussion: Enhancing the Creativity of Large Language Models via Discussion Framework and Role-Play)[https://github.com/lawraa/LLM-Discussion]
+* 🌱 Just published a paper as the first author to COLM 2024! Check it out! --> [LLM Discussion: Enhancing the Creativity of Large Language Models via Discussion Framework and Role-Play](https://github.com/lawraa/LLM-Discussion)
 * 🔭 I'm currently in Robot Learning Lab (RLL) and Speech Processing and Machine Learning Lab (SPML).
 * 📫 How to reach me: chenlawrance@gmail.com
 
